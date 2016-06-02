@@ -164,3 +164,25 @@
     }
   }
 }
+.container-inner {
+  .item-box {
+    .rank {
+      text-align: center;
+    }
+    &:first-child {
+      .rank {
+        color: #BDB76B;
+      }
+    }
+    &:nth-child(2) {
+      .rank {
+        color: #808080;
+      }
+    }
+    &:nth-child(3) {
+      .rank {
+        color: #8B4513;
+      }
+    } 
+  }
+}
