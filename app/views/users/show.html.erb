@@ -1,4 +1,10 @@
-<%= render 'profile' , user: @user %>
+<% content_for :title do %>
+  <%= @user.name %> -monolist
+<% end %>
+<% content_for :description do %>
+  <%= @user.name %>さんのモノページ。<%= @user.name %>さんの欲しいモノ、持ってるモノを表示しています。
+<% end %>
 
+<%= render 'profile' , user: @user %>
 
 <%= render 'items/list' , items: @items %>
